@@ -1,0 +1,147 @@
+header {
+  height: 12vh;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $third-color;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    color: $third-color;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: white;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-transform: capitalize;
+    }
+
+    i {
+      font-size: 2rem;
+      position: relative;
+      bottom: 3px;
+      margin-right: 0.3rem;
+      color: $secondary-color;
+    }
+  }
+
+  span {
+    color: $secondary-color;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+
+    .menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+
+      a {
+        transition: all 0.2s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        &:hover,
+        &:focus,
+        &:active {
+          color: white;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    &:hover {
+      color: white;
+    }
+    .fa-bars {
+      font-size: 2.2rem;
+      cursor: pointer;
+    }
+  }
+
+  .mobile-version.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-version {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+
+    .menu-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      a {
+        font-size: 2.5rem;
+        transition: all 0.2s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background: white;
+          color: black;
+        }
+      }
+
+      li {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .close {
+      align-self: end;
+      padding: 2rem;
+    }
+
+    .fa-xmark {
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      padding: 0.5rem 1rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: white;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

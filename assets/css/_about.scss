@@ -1,0 +1,50 @@
+#about-us {
+  //background-color: white;
+  background: url('../images/tree.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130%;
+
+  .about-us {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+    width: 60%;
+    background-color: rgba($color: $fourth-color, $alpha: 0.95);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 10px solid $third-color;
+
+    h2 {
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .contact-link {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      a {
+        border: 2px solid $secondary-color;
+        padding: 0.5rem 1rem;
+        background-color: $secondary-color;
+        color: white;
+        border-radius: 0.2rem;
+        transition: 0.2s all ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $fourth-color;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.back-to-top {
+  background-color: $secondary-color;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  right: 2rem;
+  bottom: 2rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  display: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+
+  .fa-angle-up {
+    font-size: 2rem;
+  }
+}

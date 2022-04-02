@@ -1,0 +1,47 @@
+#services {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../images/grass.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 6.5rem;
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: $main-color;
+        color: white;
+        border: none;
+      }
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

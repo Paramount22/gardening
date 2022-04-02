@@ -1,0 +1,113 @@
+@media (max-width: 75.625em) {
+  #services {
+    .services {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (max-width: 66.875em) {
+  #gallery {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 62.5em) {
+  #about-us {
+    .about-us {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 62.375em) {
+  #services {
+    .services {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 62.1875em) {
+  header {
+    nav {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 60em) {
+  #contact {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 54.25em) {
+  #about-us {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 50em) {
+  #services {
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 48.125em) {
+  #gallery {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 31.25em) {
+  #about-us {
+    .about-us {
+      width: 100%;
+      margin: 1rem;
+    }
+  }
+}
+
+@media (max-width: 30em) {
+  #services {
+    .services {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 27.5em) {
+  header {
+    .logo {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  #contact {
+    .contact {
+      .contact-info {
+        font-size: 180%;
+      }
+    }
+  }
+}
+
+@media (max-width: 26.25em) {
+  #gallery {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+}
