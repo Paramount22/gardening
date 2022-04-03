@@ -42,29 +42,37 @@
 
     let screenPosition = window.innerHeight / 2;
 
-    if (aboutUsPosition < screenPosition) {
+    if (screen.width > 500) {
+      if (aboutUsPosition < screenPosition) {
+        aboutUs.classList.remove('hide');
+        aboutUs.classList.add('animate__fadeInDown');
+      }
+
+      if (servicesPosition < screenPosition) {
+        services.classList.remove('hide');
+        services.classList.add('animate__zoomInLeft');
+      }
+
+      if (galleryPosition < screenPosition) {
+        gallery.classList.remove('hide');
+        gallery.classList.add('animate__zoomInUp');
+      }
+
+      if (contactInfoPosition < screenPosition) {
+        contactInfo.classList.remove('hide');
+        contactInfo.classList.add('animate__fadeInLeft');
+      }
+
+      if (contactImagePosition < screenPosition) {
+        contactImage.classList.remove('hide');
+        contactImage.classList.add('animate__fadeInRight');
+      }
+    } else {
       aboutUs.classList.remove('hide');
-      aboutUs.classList.add('animate__fadeInDown');
-    }
-
-    if (servicesPosition < screenPosition) {
       services.classList.remove('hide');
-      services.classList.add('animate__zoomInLeft');
-    }
-
-    if (galleryPosition < screenPosition) {
       gallery.classList.remove('hide');
-      gallery.classList.add('animate__zoomInUp');
-    }
-
-    if (contactInfoPosition < screenPosition) {
       contactInfo.classList.remove('hide');
-      contactInfo.classList.add('animate__fadeInLeft');
-    }
-
-    if (contactImagePosition < screenPosition) {
       contactImage.classList.remove('hide');
-      contactImage.classList.add('animate__fadeInRight');
     }
   };
 
