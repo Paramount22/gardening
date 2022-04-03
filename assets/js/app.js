@@ -19,6 +19,7 @@
   const contactImage = document.querySelector('[data-contact-image]');
 
   // hide elements
+
   aboutUs.classList.add('hide');
   services.classList.add('hide');
   gallery.classList.add('hide');
@@ -31,6 +32,14 @@
     const date = new Date();
     const fullYear = date.getFullYear();
     year.innerText = fullYear;
+  };
+
+  const showElemets = () => {
+    aboutUs.classList.remove('hide');
+    services.classList.remove('hide');
+    gallery.classList.remove('hide');
+    contactInfo.classList.remove('hide');
+    contactImage.classList.remove('hide');
   };
 
   const scrollApear = () => {
@@ -68,11 +77,7 @@
         contactImage.classList.add('animate__fadeInRight');
       }
     } else {
-      aboutUs.classList.remove('hide');
-      services.classList.remove('hide');
-      gallery.classList.remove('hide');
-      contactInfo.classList.remove('hide');
-      contactImage.classList.remove('hide');
+      showElemets();
     }
   };
 
