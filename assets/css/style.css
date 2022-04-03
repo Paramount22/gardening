@@ -551,7 +551,7 @@ header .mobile-version .fa-xmark:hover, header .mobile-version .fa-xmark:focus, 
   white-space: nowrap;
 }
 
-#contact .contact .contact-info a:hover, #contact .contact .contact-info a:focus, #contact .contact .contact-info a:actives {
+#contact .contact .contact-info a:hover, #contact .contact .contact-info a:focus, #contact .contact .contact-info a:active {
   color: #98bc24;
 }
 
